@@ -1,4 +1,4 @@
 FROM openjdk:8
 EXPOSE 8080
-ADD target/docker.war docker.war
-ENTRYPOINT ["java","-war","/docker.war"]
+ADD target/docker.jar dockerr.jar
+ENTRYPOINT ["java","-jar","/docker.jar"]
